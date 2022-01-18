@@ -1,0 +1,74 @@
+repositories {
+    mavenLocal()
+    maven {
+        name = 'tterrag maven'
+        url = "https://maven.tterrag.com/"
+    }
+    maven {
+        name = "Progwml6 maven"
+        url = "https://dvs1.progwml6.com/files/maven/"
+    }
+    maven {
+        name = "ModMaven"
+        url = "https://modmaven.k-4u.nl"
+    }
+    maven {
+        name = "Hwyla"
+        url = "https://maven.tehnut.info"
+    }
+    maven {
+        name = "henkelmax.public"
+        url = 'https://maven.maxhenkel.de/repository/public'
+    }
+    maven {
+        url "https://www.cursemaven.com"
+        content {
+            includeGroup "curse.maven"
+        }
+    }
+}
+
+loom {
+    accessWidenerPath = file("src/main/resources/easy_villagers.accesswidener")
+}
+
+dependencies {
+    // We depend on fabric loader here to use the fabric @Environment annotations and get the mixin dependencies
+    // Do NOT use other classes from fabric loader
+    modImplementation "net.fabricmc:fabric-loader:${rootProject.fabric_loader_version}"
+    // Remove the next line if you don't want to depend on the API
+    modApi "dev.architectury:architectury:${rootProject.architectury_version}"
+
+    modCompileOnly 'com.electronwill.night-config:toml:3.6.0'
+
+    // modImplementation "fuzs.puzzleslib:PuzzlesLib:${puzzlesVersion}"
+    //modImplementation "net.minecraftforge:ForgeConfigAPIPort:v2.0.0-1.17.1-Fabric"
+    modImplementation "curse.maven:ForgeConfigAPIPort-547434:3600916"
+
+    modCompileOnly "mezz.jei:jei-${rootProject.minecraft_version}:${rootProject.jei_version}:api"
+    modRuntimeOnly "mezz.jei:jei-${rootProject.minecraft_version}:${rootProject.jei_version}"
+
+    modImplementation "curse.maven:the-one-probe-245211:3430022"
+
+    modImplementation "curse.maven:jade-324717:${jade_id}"
+
+    implementation 'com.google.code.findbugs:jsr305:3.0.2'
+}
+
+architectury {
+    common()
+}
+
+publishing {
+    publications {
+        mavenCommon(MavenPublication) {
+            artifactId = rootProject.archives_base_name
+            from components.java
+        }
+    }
+
+    // See https://docs.gradle.org/current/userguide/publishing_maven.html for information on how to set up publishing.
+    repositories {
+        // Add repositories to publish to here.
+    }
+}

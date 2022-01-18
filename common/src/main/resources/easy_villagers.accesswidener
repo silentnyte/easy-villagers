@@ -1,0 +1,12 @@
+accessWidener	v1	named
+
+#FIXME Remove AccessWideners
+
+# OBJRenderUtils
+extendable class net/minecraft/client/renderer/RenderStateShard$ShaderStateShard
+extendable class net/minecraft/client/renderer/RenderStateShard$TransparencyStateShard
+extendable class net/minecraft/client/renderer/RenderStateShard$LightmapStateShard
+extendable class net/minecraft/client/renderer/RenderStateShard$OverlayStateShard
+
+# ClientRegistry
+extendable class net/minecraft/client/gui/screens/MenuScreens$ScreenConstructor

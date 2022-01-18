@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "easy_villagers",
+  "version": "${version}",
+  "name": "Example Mod",
+  "description": "This is an example description! Tell everyone what your mod is about!",
+  "authors": [
+    "Me!"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+  "license": "Insert License Here",
+  "icon": "assets/easy_villagers/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.easy_villagers.fabric.ExampleModFabric"
+    ]
+  },
+  "depends": {
+    "fabric": "*",
+    "minecraft": ">=1.17.1",
+    "architectury": ">=2.8.66"
+  },
+  "suggests": {
+    "flamingo": "*"
+  }
+}

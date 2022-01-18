@@ -1,0 +1,37 @@
+modLoader = "javafml"
+loaderVersion = "[37,)"
+issueTrackerURL="https://github.com/henkelmax/easy-villagers/issues"
+license="All rights reserved"
+
+[[mods]]
+modId = "easy_villagers"
+version = "${version}"
+displayName = "Easy Villagers"
+updateJSONURL="https://maxhenkel.de/update/easy_villagers.json"
+displayURL="https://www.curseforge.com/minecraft/mc-mods/easy-villagers"
+# credits=""
+description = '''
+Easy Villagers
+'''
+# logoFile="easy_villagers.png"
+
+[[dependencies.easy_villagers]]
+modId = "forge"
+mandatory = true
+versionRange = "[37,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.easy_villagers]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.17.1]"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.easy_villagers]]
+modId = "architectury"
+mandatory = true
+versionRange = "[2.8.66,)"
+ordering = "AFTER"
+side = "BOTH"
