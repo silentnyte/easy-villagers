@@ -4,7 +4,7 @@ import de.maxhenkel.corelib.net.Message;
 import de.maxhenkel.easyvillagers.gui.AutoTraderContainer;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.server.level.ServerPlayer;
-import net.fabricmc.api.Environment;
+import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.fmllegacy.network.NetworkEvent;
 
 public class MessageSelectTrade implements Message<MessageSelectTrade> {

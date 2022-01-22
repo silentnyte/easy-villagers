@@ -10,6 +10,7 @@ displayName = "Easy Villagers"
 updateJSONURL="https://maxhenkel.de/update/easy_villagers.json"
 displayURL="https://www.curseforge.com/minecraft/mc-mods/easy-villagers"
 # credits=""
+authors = "maxhenkel"
 description = '''
 Easy Villagers
 '''
@@ -32,6 +33,6 @@ side = "BOTH"
 [[dependencies.easy_villagers]]
 modId = "architectury"
 mandatory = true
-versionRange = "[2.8.66,)"
+versionRange = "[2.9.3,)"
 ordering = "AFTER"
 side = "BOTH"

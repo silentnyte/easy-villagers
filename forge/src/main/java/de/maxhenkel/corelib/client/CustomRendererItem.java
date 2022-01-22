@@ -2,8 +2,8 @@ package de.maxhenkel.corelib.client;
 
 import net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer;
 import net.minecraft.world.item.Item;
-import net.fabricmc.api.Environment;
-
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.client.IItemRenderProperties;
 
 import java.util.function.Consumer;
@@ -28,7 +28,7 @@ public class CustomRendererItem extends Item {
         }
     }
 
-    @Environment(EnvType.CLIENT)
+    @OnlyIn(Dist.CLIENT)
     public ItemRenderer createItemRenderer() {
         return null;
     }

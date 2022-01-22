@@ -1,7 +1,7 @@
 package de.maxhenkel.corelib.net;
 
 import net.minecraft.network.FriendlyByteBuf;
-import net.fabricmc.api.Environment;
+import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.fmllegacy.network.NetworkEvent;
 
 public interface Message<T extends Message> {

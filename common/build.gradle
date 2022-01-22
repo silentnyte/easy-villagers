@@ -26,10 +26,15 @@ repositories {
             includeGroup "curse.maven"
         }
     }
+    /* REI Integration */
+    maven { url "https://maven.shedaniel.me" }
+
+	/* WTHIT Integration */
+	maven { url "https://maven.bai.lol" }
 }
 
 loom {
-    accessWidenerPath = file("src/main/resources/easy_villagers.accesswidener")
+    //accessWidenerPath = file("src/main/resources/easy_villagers.accesswidener")
 }
 
 dependencies {
@@ -45,8 +50,13 @@ dependencies {
     //modImplementation "net.minecraftforge:ForgeConfigAPIPort:v2.0.0-1.17.1-Fabric"
     modImplementation "curse.maven:ForgeConfigAPIPort-547434:3600916"
 
-    modCompileOnly "mezz.jei:jei-${rootProject.minecraft_version}:${rootProject.jei_version}:api"
-    modRuntimeOnly "mezz.jei:jei-${rootProject.minecraft_version}:${rootProject.jei_version}"
+	/* REI Integration */
+    modCompileOnly "me.shedaniel:RoughlyEnoughItems-api:${rootProject.rei_version}"
+    //modCompileOnly "mezz.jei:jei-${rootProject.minecraft_version}:${rootProject.jei_version}:api"
+    //modRuntimeOnly "mezz.jei:jei-${rootProject.minecraft_version}:${rootProject.jei_version}"
+
+	/* WTHIT Integration */
+	modCompileOnly "mcp.mobius.waila:wthit-api:fabric-${rootProject.wthit_version}"
 
     modImplementation "curse.maven:the-one-probe-245211:3430022"
 

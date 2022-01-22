@@ -1,6 +1,12 @@
 plugins {
     id "com.github.johnrengelman.shadow" version "7.1.2"
 }
+loom {
+    forge {
+        mixinConfig "easyvillagers-common.mixins.json"
+        mixinConfig "easyvillagers.mixins.json"
+    }
+}
 
 architectury {
     platformSetupLoomIde()
@@ -43,6 +49,11 @@ repositories {
             includeGroup "curse.maven"
         }
     }
+    /* REI Integration */
+    maven { url "https://maven.shedaniel.me" }
+
+	/* WTHIT Integration */
+	maven { url "https://maven.bai.lol" }
 }
 
 dependencies {
@@ -50,8 +61,14 @@ dependencies {
     // Remove the next line if you don't want to depend on the API
     modApi "dev.architectury:architectury-forge:${rootProject.architectury_version}"
 
+    /* REI Integration */
+    //modCompileOnly "me.shedaniel:RoughlyEnoughItems-api:${rootProject.rei_version}"
+    //modRuntimeOnly "me.shedaniel:RoughlyEnoughItems-forge:${rootProject.rei_version}"
     modCompileOnly "mezz.jei:jei-${rootProject.minecraft_version}:${rootProject.jei_version}:api"
     modRuntimeOnly "mezz.jei:jei-${rootProject.minecraft_version}:${rootProject.jei_version}"
+
+	/* WTHIT Integration */
+	//modRuntimeOnly "mcp.mobius.waila:wthit:forge-${rootProject.wthit_version}"
 
     modImplementation "curse.maven:the-one-probe-245211:3430022"
 
@@ -63,7 +80,6 @@ dependencies {
 
     common(project(path: ":common", configuration: "namedElements")) { transitive false }
     shadowCommon(project(path: ":common", configuration: "transformProductionForge")) { transitive = false }
-
 }
 
 processResources {
@@ -79,8 +95,6 @@ shadowJar {
 
     configurations = [project.configurations.shadowCommon]
     classifier "dev-shadow"
-
-    //relocate 'de.maxhenkel.corelib', "de.maxhenkel.easy_villagers.corelib"
 }
 
 remapJar {

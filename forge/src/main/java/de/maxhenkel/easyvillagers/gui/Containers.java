@@ -4,8 +4,8 @@ import de.maxhenkel.corelib.ClientRegistry;
 import de.maxhenkel.easyvillagers.Main;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.inventory.MenuType;
-import net.fabricmc.api.Environment;
-
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.event.RegistryEvent;
 
 public class Containers {
@@ -15,7 +15,7 @@ public class Containers {
     public static MenuType<VillagerIOContainer> VILLAGER_IO_CONTAINER;
     public static MenuType<OutputContainer> OUTPUT_CONTAINER;
 
-    @Environment(EnvType.CLIENT)
+    @OnlyIn(Dist.CLIENT)
     public static void clientSetup() {
         ClientRegistry.<AutoTraderContainer, AutoTraderScreen>registerScreen(AUTO_TRADER_CONTAINER, AutoTraderScreen::new);
         ClientRegistry.<BreederContainer, BreederScreen>registerScreen(BREEDER_CONTAINER, BreederScreen::new);

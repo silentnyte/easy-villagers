@@ -3,7 +3,7 @@ package de.maxhenkel.easyvillagers.net;
 import de.maxhenkel.corelib.net.Message;
 import de.maxhenkel.easyvillagers.events.GuiEvents;
 import net.minecraft.network.FriendlyByteBuf;
-import net.fabricmc.api.Environment;
+import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.fmllegacy.network.NetworkEvent;
 
 public class MessageCycleTrades implements Message<MessageCycleTrades> {

@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "package": "de.maxhenkel.easyvillagers.mixin.fabric",
+  "compatibilityLevel": "JAVA_16",
+  "client": [
+  ],
+  "mixins": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

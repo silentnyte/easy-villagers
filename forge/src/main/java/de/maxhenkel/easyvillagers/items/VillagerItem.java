@@ -27,8 +27,8 @@ import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.DispenserBlock;
 import net.minecraft.world.level.block.state.BlockState;
-import net.fabricmc.api.Environment;
-
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.api.distmarker.OnlyIn;
 
 import javax.annotation.Nullable;
 import java.util.List;
@@ -53,7 +53,7 @@ public class VillagerItem extends CustomRendererItem {
         });
     }
 
-    @Environment(EnvType.CLIENT)
+    @OnlyIn(Dist.CLIENT)
     @Override
     public ItemRenderer createItemRenderer() {
         return new VillagerItemRenderer();
@@ -91,7 +91,7 @@ public class VillagerItem extends CustomRendererItem {
         super.appendHoverText(stack, worldIn, tooltip, flagIn);
     }
 
-    @Environment(EnvType.CLIENT)
+    @OnlyIn(Dist.CLIENT)
     @Override
     public Component getName(ItemStack stack) {
         Level world = Minecraft.getInstance().level;
@@ -149,7 +149,7 @@ public class VillagerItem extends CustomRendererItem {
         return cachedVillagers.get(stack, () -> getVillager(world, stack));
     }
 
-    @Environment(EnvType.CLIENT)
+    @OnlyIn(Dist.CLIENT)
     public static ItemStack getBabyVillager() {
         ItemStack babyVillager = new ItemStack(ModItems.VILLAGER);
         EasyVillagerEntity villager = new EasyVillagerEntity(EntityType.VILLAGER, Minecraft.getInstance().level);

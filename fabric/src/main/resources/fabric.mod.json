@@ -16,7 +16,6 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.easy_villagers.fabric.ExampleModFabric"
     ]
   },
   "depends": {

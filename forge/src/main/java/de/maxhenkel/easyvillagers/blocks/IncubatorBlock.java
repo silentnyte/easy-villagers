@@ -35,8 +35,8 @@ import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.phys.BlockHitResult;
-import net.fabricmc.api.Environment;
-
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.api.distmarker.OnlyIn;
 
 import javax.annotation.Nullable;
 import java.util.List;
@@ -51,7 +51,7 @@ public class IncubatorBlock extends VillagerBlockBase implements EntityBlock, II
     @Override
     public Item toItem() {
         return new CustomRendererBlockItem(this, new Item.Properties().tab(ModItemGroups.TAB_EASY_VILLAGERS)) {
-            @Environment(EnvType.CLIENT)
+            @OnlyIn(Dist.CLIENT)
             @Override
             public ItemRenderer createItemRenderer() {
                 return new IncubatorItemRenderer();
@@ -110,7 +110,7 @@ public class IncubatorBlock extends VillagerBlockBase implements EntityBlock, II
         return RenderShape.INVISIBLE;
     }
 
-    @Environment(EnvType.CLIENT)
+    @OnlyIn(Dist.CLIENT)
     @Override
     public float getShadeBrightness(BlockState state, BlockGetter worldIn, BlockPos pos) {
         return 1F;

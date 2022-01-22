@@ -6,8 +6,8 @@ import de.maxhenkel.easyvillagers.blocks.tileentity.render.*;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderers;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.entity.BlockEntityType;
-import net.fabricmc.api.Environment;
-
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.event.RegistryEvent;
 
 public class ModTileEntities {
@@ -50,7 +50,7 @@ public class ModTileEntities {
         event.getRegistry().register(INCUBATOR);
     }
 
-    @Environment(EnvType.CLIENT)
+    @OnlyIn(Dist.CLIENT)
     public static void clientSetup() {
         BlockEntityRenderers.register(ModTileEntities.TRADER, TraderRenderer::new);
         BlockEntityRenderers.register(ModTileEntities.AUTO_TRADER, AutoTraderRenderer::new);

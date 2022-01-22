@@ -6,7 +6,7 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.npc.Villager;
-import net.fabricmc.api.Environment;
+import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.fmllegacy.network.NetworkEvent;
 
 import java.util.UUID;
