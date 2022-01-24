@@ -3,7 +3,7 @@ package de.maxhenkel.easyvillagers.forge.gui;
 import de.maxhenkel.easyvillagers.EasyVillagers;
 import com.mojang.blaze3d.systems.RenderSystem;
 import com.mojang.blaze3d.vertex.PoseStack;
-import de.maxhenkel.corelib.inventory.ScreenBase;
+import de.maxhenkel.corelib.forge.inventory.ScreenBase;
 import de.maxhenkel.easyvillagers.forge.EasyVillagersForge;
 import de.maxhenkel.easyvillagers.forge.net.MessageSelectTrade;
 import net.minecraft.client.gui.components.Button;

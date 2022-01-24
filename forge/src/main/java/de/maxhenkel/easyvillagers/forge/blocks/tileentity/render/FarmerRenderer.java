@@ -2,7 +2,7 @@ package de.maxhenkel.easyvillagers.forge.blocks.tileentity.render;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.math.Vector3f;
-import de.maxhenkel.corelib.client.RenderUtils;
+import de.maxhenkel.corelib.forge.client.RenderUtils;
 import de.maxhenkel.easyvillagers.forge.blocks.TraderBlock;
 import de.maxhenkel.easyvillagers.forge.blocks.tileentity.FarmerTileentity;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;

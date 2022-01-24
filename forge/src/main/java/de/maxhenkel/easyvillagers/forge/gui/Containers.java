@@ -1,8 +1,7 @@
 package de.maxhenkel.easyvillagers.forge.gui;
 
 import de.maxhenkel.easyvillagers.EasyVillagers;
-import de.maxhenkel.corelib.ClientRegistry;
-import de.maxhenkel.easyvillagers.forge.EasyVillagersForge;
+import de.maxhenkel.corelib.forge.ClientRegistry;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.inventory.MenuType;
 import net.minecraftforge.api.distmarker.Dist;

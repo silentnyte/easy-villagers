@@ -1,7 +1,7 @@
 package de.maxhenkel.easyvillagers.forge.items;
 
 import de.maxhenkel.corelib.CachedMap;
-import de.maxhenkel.corelib.client.CustomRendererItem;
+import de.maxhenkel.corelib.forge.client.CustomRendererItem;
 import de.maxhenkel.corelib.client.ItemRenderer;
 import de.maxhenkel.corelib.item.ItemUtils;
 import de.maxhenkel.easyvillagers.forge.blocks.VillagerBlockBase;

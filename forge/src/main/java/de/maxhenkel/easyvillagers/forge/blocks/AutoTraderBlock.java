@@ -1,12 +1,11 @@
 package de.maxhenkel.easyvillagers.forge.blocks;
 
 import de.maxhenkel.easyvillagers.EasyVillagers;
-import de.maxhenkel.corelib.client.CustomRendererBlockItem;
+import de.maxhenkel.corelib.forge.client.CustomRendererBlockItem;
 import de.maxhenkel.corelib.client.ItemRenderer;
 import de.maxhenkel.easyvillagers.forge.blocks.tileentity.AutoTraderTileentity;
 import de.maxhenkel.easyvillagers.forge.blocks.tileentity.TraderTileentityBase;
 import de.maxhenkel.easyvillagers.forge.entity.EasyVillagerEntity;
-import de.maxhenkel.easyvillagers.forge.EasyVillagersForge;
 import de.maxhenkel.easyvillagers.forge.ItemTileEntityCache;
 import de.maxhenkel.easyvillagers.forge.ModItemGroups;
 import de.maxhenkel.easyvillagers.forge.gui.AutoTraderContainer;

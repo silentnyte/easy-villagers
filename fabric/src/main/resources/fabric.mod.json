@@ -16,6 +16,7 @@
   "environment": "*",
   "entrypoints": {
     "main": [
+      "de.maxhenkel.easyvillagers.fabric.EasyVillagersFabric"
     ]
   },
   "depends": {

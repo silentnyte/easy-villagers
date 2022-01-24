@@ -1,7 +1,7 @@
 package de.maxhenkel.easyvillagers.forge.gui;
 
-import de.maxhenkel.corelib.inventory.ContainerBase;
-import de.maxhenkel.corelib.inventory.LockedSlot;
+import de.maxhenkel.corelib.forge.inventory.ContainerBase;
+import de.maxhenkel.corelib.forge.inventory.LockedSlot;
 import net.minecraft.world.Container;
 import net.minecraft.world.SimpleContainer;
 import net.minecraft.world.entity.player.Inventory;

@@ -2,8 +2,7 @@ package de.maxhenkel.easyvillagers.forge.gui;
 
 import de.maxhenkel.easyvillagers.EasyVillagers;
 import com.mojang.blaze3d.vertex.PoseStack;
-import de.maxhenkel.corelib.inventory.ScreenBase;
-import de.maxhenkel.easyvillagers.forge.EasyVillagersForge;
+import de.maxhenkel.corelib.forge.inventory.ScreenBase;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.MutableComponent;
 import net.minecraft.network.chat.TranslatableComponent;

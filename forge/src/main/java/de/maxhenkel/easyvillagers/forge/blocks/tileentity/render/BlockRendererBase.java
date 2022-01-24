@@ -1,7 +1,7 @@
 package de.maxhenkel.easyvillagers.forge.blocks.tileentity.render;
 
 import com.mojang.blaze3d.vertex.PoseStack;
-import de.maxhenkel.corelib.client.RenderUtils;
+import de.maxhenkel.corelib.forge.client.RenderUtils;
 import de.maxhenkel.easyvillagers.forge.blocks.tileentity.FakeWorldTileentity;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.MultiBufferSource;

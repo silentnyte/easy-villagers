@@ -5,6 +5,7 @@
   "client": [
   ],
   "mixins": [
+    "VillagerMixin"
   ],
   "injectors": {
     "defaultRequire": 1

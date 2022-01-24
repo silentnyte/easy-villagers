@@ -1,7 +1,6 @@
 package de.maxhenkel.easyvillagers.forge.items;
 
 import de.maxhenkel.easyvillagers.EasyVillagers;
-import de.maxhenkel.easyvillagers.forge.EasyVillagersForge;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.event.RegistryEvent;
 

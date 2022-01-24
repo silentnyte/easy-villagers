@@ -1,6 +1,6 @@
 package de.maxhenkel.easyvillagers.forge.net;
 
-import de.maxhenkel.corelib.net.Message;
+import de.maxhenkel.corelib.forge.net.Message;
 import de.maxhenkel.easyvillagers.forge.events.GuiEvents;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraftforge.api.distmarker.Dist;

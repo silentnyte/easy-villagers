@@ -1,7 +1,7 @@
 package de.maxhenkel.easyvillagers.forge.blocks.tileentity;
 
 import de.maxhenkel.corelib.blockentity.IServerTickableBlockEntity;
-import de.maxhenkel.corelib.inventory.ItemListInventory;
+import de.maxhenkel.corelib.forge.inventory.ItemListInventory;
 import de.maxhenkel.easyvillagers.forge.blocks.ModBlocks;
 import de.maxhenkel.easyvillagers.forge.blocks.VillagerBlockBase;
 import de.maxhenkel.easyvillagers.forge.EasyVillagersForge;

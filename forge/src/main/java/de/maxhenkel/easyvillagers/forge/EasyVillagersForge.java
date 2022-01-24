@@ -3,8 +3,8 @@ package de.maxhenkel.easyvillagers.forge;
 import dev.architectury.platform.forge.EventBuses;
 import de.maxhenkel.easyvillagers.EasyVillagers;
 
-import de.maxhenkel.corelib.ClientRegistry;
-import de.maxhenkel.corelib.CommonRegistry;
+import de.maxhenkel.corelib.forge.ClientRegistry;
+import de.maxhenkel.corelib.forge.CommonRegistry;
 import de.maxhenkel.easyvillagers.forge.blocks.ModBlocks;
 import de.maxhenkel.easyvillagers.forge.blocks.tileentity.ModTileEntities;
 import de.maxhenkel.easyvillagers.forge.events.BlockEvents;
@@ -34,8 +34,6 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.fmllegacy.network.simple.SimpleChannel;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.lwjgl.glfw.GLFW;
 
 @Mod(EasyVillagers.MOD_ID)
@@ -43,7 +41,7 @@ public class EasyVillagersForge {
 
     //public static final String MODID = "easy_villagers";
 
-    public static final Logger LOGGER = LogManager.getLogger(EasyVillagers.MOD_ID);
+    //public static final Logger LOGGER = LogManager.getLogger(EasyVillagers.MOD_ID);
 
     public static ServerConfig SERVER_CONFIG;
     public static ClientConfig CLIENT_CONFIG;
