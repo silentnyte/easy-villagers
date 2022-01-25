@@ -37,8 +37,8 @@ public class VillagerItem extends Item {
 
     private final CachedMap<ItemStack, EasyVillagerEntity> cachedVillagers;
 
-    public VillagerItem() {
-        super(new Item.Properties().stacksTo(1));
+    public VillagerItem(Properties properties) {
+        super(properties.stacksTo(1));
         cachedVillagers = new CachedMap<>(10_000, ItemUtils.ITEM_COMPARATOR);
 
         DispenserBlock.registerBehavior(this, (source, stack) -> {

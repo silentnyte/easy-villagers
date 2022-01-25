@@ -15,6 +15,7 @@
   "gui.easy_villagers.input": "Input Items",
   "gui.easy_villagers.output": "Output Items",
   "itemGroup.easy_villagers": "Easy Villagers",
+  "itemGroup.easy_villagers.development_tab": "Development",
   "tooltip.easy_villagers.villager_profession": "%s (%s)",
   "tooltip.easy_villagers.zombie_villager_profession": "%s (%s)",
   "tooltip.easy_villagers.cycle_trades": "Cycle Trades",

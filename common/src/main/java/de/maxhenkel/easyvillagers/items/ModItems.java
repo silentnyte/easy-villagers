@@ -13,7 +13,7 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(EasyVillagers.MOD_ID, Registry.ITEM_REGISTRY);
 
     //public static VillagerItem VILLAGER = new VillagerItem();
-    public static final RegistrySupplier<VillagerItem> VILLAGER2 = ITEMS.register("villager2", () -> new VillagerItem());
+    public static final RegistrySupplier<VillagerItem> VILLAGER2 = ITEMS.register("villager2", () -> new VillagerItem(new Item.Properties().tab(EasyVillagers.DEVELOPMENT_TAB)));
 
     public static void init() {
         ITEMS.register();

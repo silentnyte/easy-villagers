@@ -2,14 +2,14 @@
   "schemaVersion": 1,
   "id": "easy_villagers",
   "version": "${version}",
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Easy Villagers",
+  "description": "Never get annoyed by villagers again!",
   "authors": [
-    "Me!"
+    "maxhenkel"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/easy-villagers",
+    "sources": "https://github.com/henkelmax/easy-villagers"
   },
   "license": "Insert License Here",
   "icon": "assets/easy_villagers/icon.png",
@@ -17,6 +17,9 @@
   "entrypoints": {
     "main": [
       "de.maxhenkel.easyvillagers.fabric.EasyVillagersFabric"
+    ],
+    "client": [
+      "de.maxhenkel.easyvillagers.fabric.EasyVillagersFabricClient"
     ]
   },
   "depends": {

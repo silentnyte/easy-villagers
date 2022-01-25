@@ -24,12 +24,12 @@ public class EasyVillagers {
     public static ServerConfig SERVER_CONFIG;
 
     // Registering a new creative tab
-    public static final CreativeModeTab EXAMPLE_TAB = CreativeTabRegistry.create(new ResourceLocation(EasyVillagers.MOD_ID, "example_tab"), () ->
+    public static final CreativeModeTab DEVELOPMENT_TAB = CreativeTabRegistry.create(new ResourceLocation(EasyVillagers.MOD_ID, "development_tab"), () ->
             new ItemStack(ModItems.VILLAGER2.get()));
         
     public static void init() {
         ModItems.init();
-        
+        //SERVER_CONFIG = CommonRegistry.registerConfig(ModConfig.Type.SERVER, ServerConfig.class);
         System.out.println(EasyVillagersExpectPlatform.getConfigDirectory().toAbsolutePath().normalize().toString());
     }
 }
